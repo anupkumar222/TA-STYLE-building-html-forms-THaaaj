@@ -1,0 +1,580 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: "poppins";
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* custom css starts here */
+
+/* font family */
+/* font-family: 'Poppins', sans-serif; */
+
+/* general */
+.container-80 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-70 {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+.heading {
+    padding: 30px 0;
+}
+
+.logo span {
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.top-nav {
+    padding-top: 20px;
+}
+
+.top-nav a {
+    margin-left: 50px;
+    font-weight: 600;
+    color: black;
+
+}
+
+.top-nav a:hover {
+    color: #69c6ba;
+}
+
+/* main */
+/* hero section */
+
+.hero {
+    background-image: linear-gradient(to right, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(./assets/banner.jpg);
+    background-size: cover;
+    padding-bottom: 60px;
+}
+
+/* header part  */
+.hero-header {
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    line-height: 2;
+}
+
+.hero-header h1 {
+    font-size: 36px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.hero-header p {
+    padding: 10px 0;
+}
+
+.hero-header i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: #69c6ba;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+}
+
+label {
+    margin: 10px 0;
+}
+
+.booking legend {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.c-box-1 {
+    width: 48%;
+
+    margin: 20px 10px;
+}
+
+.destination {
+    width: 70%;
+    padding: 5px;
+    margin-left: 10px;
+    border: 0;
+    margin: 20px 0;
+}
+
+.c-box-2 {
+    width: 48%;
+
+    margin: 20px 10px;
+}
+
+.room {
+    width: 100%;
+}
+
+.size {
+    width: 80%;
+    border: 0;
+    margin: 20px 0;
+}
+
+.c-box-2 button {
+    width: 100%;
+    padding: 20px;
+    border: 0;
+
+    background-color: #69c6ba;
+    margin-top: 60px;
+}
+
+.c-box-2 a {
+    color: white;
+    font-weight: 600;
+}
+
+/* priority section */
+.priority {
+    background-color: #efefef;
+    text-align: center;
+    padding: 40px 20px;
+
+}
+
+.article {
+    margin-top: 20px;
+}
+
+.article h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.article strong {
+    font-weight: 600;
+}
+
+.article p {
+    font-size: 16px;
+    color: grey;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+.btn {
+    width: 20%;
+    padding: 20px;
+    border: 0;
+    background-color: #69c6ba;
+    margin-top: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+/* article section */
+
+/* .europe */
+.article figure {
+    width: 50%;
+    height: 50vh;
+}
+
+.europe img {
+    width: 50%;
+}
+
+.content {
+    width: 55%;
+    position: absolute;
+    top: 150px;
+    right: 50px;
+}
+
+.arrow-content {
+    align-items: center;
+}
+
+.europe {
+    position: relative;
+}
+
+.arrow-content i {
+    background-color: rgb(133, 125, 118);
+    opacity: 0.6;
+    color: #e1dfde;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.about-content {
+    background-color: #69c6ba;
+    padding: 30px 40px;
+    color: white;
+    line-height: 1.3;
+
+}
+
+.about-content header {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: white;
+    color: #69c6ba;
+    border: 0;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+/* aisa */
+.content-asia {
+    width: 55%;
+    position: absolute;
+    top: 160px;
+    left: 60px;
+}
+
+.asia img {
+    width: 50%;
+    margin-left: 759px
+}
+
+.asia {
+    position: relative;
+}
+
+.asia-1 {
+    height: 230px;
+    background-color: #c66995;
+}
+
+.asia-arrow {
+    align-items: initial;
+    margin-top: 100px;
+}
+
+.asia-btn {
+    color: #c66995;
+}
+
+/* america */
+.content-usa {
+    width: 55%;
+    position: absolute;
+    top: 185px;
+    right: 50px;
+}
+
+/* continent section */
+
+.continent {
+    background-color: #69c6ba;
+    margin-bottom: 80px;
+}
+
+.images p {
+    color: white;
+    /* padding: 10px 0; */
+}
+
+.hover {
+    width: 15%;
+    text-align: center;
+    padding: 20px;
+    object-fit: fill;
+
+}
+
+.asia-map {
+    background-color: #c66995;
+}
+
+/* hotel detail */
+
+.hotel-blog {
+    height: 180px;
+    margin: 50px 0;
+}
+
+.hotel-content {
+    padding: 50px 25px;
+}
+
+.hotel-content header {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.hotel-content span {
+    color: #c66995;
+    font-size: 12px;
+}
+
+.hotel-content p {
+    padding-top: 15px;
+    color: grey;
+}
+
+.price {
+    width: 30%;
+    color: white;
+    background-color: #69c6ba;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 600;
+
+}
+
+.price p {
+    padding-bottom: 20px;
+    font-size: 20px;
+
+}
+
+.price strong {
+    font-size: 12px;
+}
+
+.curve {
+    background-color: #69c6ba;
+}
+
+.places {
+    display: flex;
+    margin: 20px auto;
+}
+
+/* map section */
+
+.map-page {
+    margin-top: 50px;
+}
+
+.address-map {
+    position: relative;
+}
+
+
+/* form */
+.form {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    top: 70px;
+    right: 100px;
+}
+
+.text {
+    width: 48%;
+    padding: 5px;
+    border: 0;
+    background-color: #f5f5f5;
+}
+
+.subject {
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    background-color: #f5f5f5;
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px;
+    border: none;
+    background-color: #f5f5f5;
+    color: #5B5D5F;
+    font-size: 14px;
+}
+
+.form button {
+
+    width: 100%;
+    padding: 10px;
+    border: 0;
+
+    background-color: #69c6ba;
+    margin-top: 10px;
+}
+
+.form a {
+    color: white;
+}
+
+/* footer */
+
+footer {
+    background-color: #69c6ba;
+}
+
+footer .copy {
+    color: white;
+    padding: 40px;
+    font-size: 12px;
+    text-align: center;
+    word-spacing: 3px;
+}
